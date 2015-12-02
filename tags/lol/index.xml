@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lol on frontend dev and design</title>
+    <link>https://irrvrsl.github.io/tags/lol/</link>
+    <description>Recent content in Lol on frontend dev and design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://irrvrsl.github.io/tags/lol/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>7 security practices you need to follow</title>
+      <link>https://irrvrsl.github.io/blog/lorem</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://irrvrsl.github.io/blog/lorem</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, veniam blanditiis saepe amet praesentium iusto odit labore deleniti, inventore sit quis vero aliquam atque debitis?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

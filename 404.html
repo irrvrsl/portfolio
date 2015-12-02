@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404 | This page doesn't exist</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100vh;
+		}
+		.nopage {
+			display: table;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			font-family: sans-serif;
+			background: url(../static/img/pattern.svg);
+			background-size: cover;
+		}
+		.nopage-container {
+			display: table-cell;
+			vertical-align: middle;
+			background: rgba(255,255,255,.1);
+			color: #444;
+		}
+		.nopage__title {
+			margin: 0 0 2rem;
+			font-size: 8rem;
+		}	
+		.nopage__subheader {
+			font-size: 4rem;
+		}
+		.nopage__description {
+			font-size: 1.5rem;
+			margin: 0 0 3rem;
+		}
+		.nopage__link {
+			display: block;
+			width: 150px;
+			margin: 0 auto;
+			padding: 10px 20px;
+			border-radius: 3px;
+			font-size: 1.5rem;
+			text-decoration: none;
+			color: #333;
+			background: #ffe082;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+			transition: all .3s ease;
+		}
+		.nopage__link:hover {
+			box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<main class="nopage">
+		<div class="nopage-container">
+			<h1 class="nopage__title">404</h1>
+			<h2 class="nopage__subheader">Page Not Found</h2>
+			<p class="nopage__description">For some reason the page you requested could not be found on our server</p>
+			<a href="https://irrvrsl.github.io" class="nopage__link">Go back</a>
+		</div>
+	</main>
+</body>
+</html>

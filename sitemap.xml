@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://irrvrsl.github.io/</loc>
+    <lastmod>2009-12-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://irrvrsl.github.io/blog/7-security-practices-you-need-to-follow</loc>
+    <lastmod>2009-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irrvrsl.github.io/blog/lorem</loc>
+    <lastmod>2009-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irrvrsl.github.io/about/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irrvrsl.github.io/contacts/contacts/</loc>
+  </url>
+  
+</urlset>

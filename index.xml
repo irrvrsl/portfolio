@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frontend dev and design</title>
+    <link>https://irrvrsl.github.io/</link>
+    <description>Recent content on frontend dev and design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://irrvrsl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>7 security practices you need to follow</title>
+      <link>https://irrvrsl.github.io/blog/7-security-practices-you-need-to-follow</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://irrvrsl.github.io/blog/7-security-practices-you-need-to-follow</guid>
+      <description>
+
+&lt;p&gt;Some of this may seem like a broken record, yet every single time you
+hear about a bank losing millions of customer data, or a company having
+a &lt;a href=&#34;http://en.wikipedia.org/wiki/Computer_security&#34; title=&#34;Computer security&#34;&gt;security
+breach&lt;/a&gt;
+they consistently have failed to implement and enforce the most basic
+security practices. Here are 7 simple security practices that you cannot
+afford to not follow.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-secure-pass-phrases:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;1. Secure pass phrases&lt;/h3&gt;
+
+&lt;p&gt;Throw away the notion of
+a &lt;a href=&#34;http://en.wikipedia.org/wiki/Password&#34; title=&#34;Password&#34;&gt;password&lt;/a&gt;. Pass
+phrases consisting of multiple words and symbols are considerably more
+secure and easy to remember. Most people use the same password for
+everything and it’s almost always a word or a word+#. A good &lt;a href=&#34;http://en.wikipedia.org/wiki/Passphrase&#34; title=&#34;Passphrase&#34;&gt;pass
+phrase&lt;/a&gt; can be
+something like “Mary.had.@.little.Lamb”. It’s really easy to remember
+and nearly impossible to guess or brute force. Using a password
+management system like One Password for Mac is also a good idea.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-educate-your-users:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;2. Educate your users&lt;/h3&gt;
+
+&lt;p&gt;All too often policies are put into place but lacking training necessary
+to ensure that policies are understood and followed. Quarterly web casts
+can go a long way to ensuring that the most critical policies are
+complied with without adding unnecessary disruptions to the business.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-perform-regulatory-compliance-http-en-wikipedia-org-wiki-regulatory-compliance-regulatory-compliance-self-audits:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;3. Perform &lt;a href=&#34;http://en.wikipedia.org/wiki/Regulatory_compliance&#34; title=&#34;Regulatory compliance&#34;&gt;regulatory compliance&lt;/a&gt; self audits&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;body {
+  font-family: &amp;quot;Noto Sans&amp;quot;, sans-serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hackers are attempting to break into your systems right now. If you
+aren’t holding self audits than the only ones auditing your systems are
+the hackers. It’s critical that this practice takes place routinely to
+ensure that your data and systems are as safe as possible. It only takes
+one small mistake to make you vulnerable. Routine system checking means
+there is a chance you will find it before someone else does.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-access-provided-on-a-needs-to-have-basis:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;4. Access provided on a needs to have basis&lt;/h3&gt;
+
+&lt;p&gt;Yes this is inconvenient. Yes you need to do it. Firewalls, ACL, fine
+grained permissions. Properly setup roles. In every system you do use,
+in every level. This also means that root/admin permission should always
+be behind sudo and never logged in.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-encrypt-all-sensitive-data:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;5. Encrypt all sensitive data&lt;/h3&gt;
+
+&lt;p&gt;All sensitive data should be encrypted. Hard drives should be encrypted;
+Tunnels should be encrypted using
+SSH, &lt;a href=&#34;http://en.wikipedia.org/wiki/Virtual_private_network&#34; title=&#34;Virtual private network&#34;&gt;VPN&lt;/a&gt;
+or SSL; Wireless networks and even wireless keyboards. Passwords should
+be stored via a one
+way &lt;a href=&#34;http://en.wikipedia.org/wiki/Encryption&#34; title=&#34;Encryption&#34;&gt;encryption&lt;/a&gt;
+like md5.&lt;/p&gt;
+
+&lt;h3 id=&#34;6-never-take-data-off-site-flash-drives-laptops-etc:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;6. Never take data off site (flash drives, laptops, etc)&lt;/h3&gt;
+
+&lt;p&gt;It seems every time you hear about a bank or government agency losing
+millions of critical identity information a portable drive or laptop is
+involved. While encryption is part of the solution here, it could
+entirely be avoided if sensitive data is not permitted off site. Data
+should reside on servers sitting behind properly established ACL and not
+be available to be copied or transferred onto a laptop or portable
+drive.&lt;/p&gt;
+
+&lt;h3 id=&#34;7-use-common-sense:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;7. Use common sense&lt;/h3&gt;
+
+&lt;p&gt;Lastly, the most important security principle is to use common sense. If
+it seems wrong, it probably is. Common sense is your best defense. Use
+it wisely.&lt;/p&gt;
+
+&lt;h2 id=&#34;related-articles:f358ebdcd31933f8cdcc7d2db902d14b&#34;&gt;Related articles&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://abusiveviews.wordpress.com/2009/11/01/data-security-in-simple-terms/&#34;&gt;Data Security in Simple
+Terms&lt;/a&gt;
+(abusiveviews.wordpress.com)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://techie-buzz.com/tips-and-tricks/protect-your-important-and-personal-data.html?utm_source=subscriber&amp;amp;utm_medium=rss&amp;amp;utm_campaign=rss&#34;&gt;Protect Your Important and Personal
+Data&lt;/a&gt;
+(techie-buzz.com)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crunchgear.com/2009/10/08/secure-your-data-with-encrypted-usb-drives/&#34;&gt;Secure your data with encrypted USB
+drives&lt;/a&gt;
+(crunchgear.com)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.socialmediatoday.com/SMC/122938&#34;&gt;Lawyers should leave their laptops at home when traveling
+abroad&lt;/a&gt;(socialmediatoday.com)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://owencutajar.com/protect-your-data/&#34;&gt;Protect your data&lt;/a&gt;
+(owencutajar.com)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7 security practices you need to follow</title>
+      <link>https://irrvrsl.github.io/blog/lorem</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://irrvrsl.github.io/blog/lorem</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, veniam blanditiis saepe amet praesentium iusto odit labore deleniti, inventore sit quis vero aliquam atque debitis?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://irrvrsl.github.io/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irrvrsl.github.io/about/about/</guid>
+      <description>&lt;p&gt;title = &amp;ldquo;hello&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://irrvrsl.github.io/contacts/contacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irrvrsl.github.io/contacts/contacts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
