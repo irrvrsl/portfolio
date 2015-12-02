@@ -1,8 +1,14 @@
 {{ $baseurl := .Site.BaseURL }}
 <article class='post z-depth-1'>
     <header class='post__header'>
-      <h2 class='post__title'><a class='post__title-link' href='{{ .Permalink }}'> {{ .Title }}</a></h2>
-      <p class='post__meta-date'>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+      <h2 class='post__title'>
+        <a class='post__title-link' href='{{ .Permalink }}'> 
+          {{ .Title }}
+        </a>
+      </h2>
+      <p class='post__meta-date'>
+        {{ .Date.Format "Mon, Jan 2, 2006" }}
+      </p>
       <ul class="post__tags">
       	{{ range .Params.tags}}
       	<li class='post__tag'>
@@ -15,7 +21,9 @@
     </header>
     <p class='post__content'>{{ .Summary }}</p>
     <footer class='post__footer'>
-        <a class='post__footer-link waves-effect waves-green' href='{{ .Permalink }}'>Continue reading</a>
+        <a class='post__footer-link waves-effect waves-green' href='{{ .Permalink }}'>
+          Continue reading
+        </a>
     </footer>
 </article>
 	
