@@ -1,0 +1,46 @@
+{{ range .Site.Data.projects }}
+<div id='portfolioModal{{ .modalID }}' class='modal'>
+    <div class='modal-content'>
+        <h2 class='modal-heading'>{{ .title }}</h2>
+    	<p class='modal-intro'>{{ .subtitle | markdownify }}</p>
+        <div class='row'>
+        	<div class='modal-body col s12 l8'>
+            	<picture>
+                    <source srcset="{{ .BaseURL}}img/portfolio/{{.img}}" media="(min-width: 1000px)">
+                    <img srcset="{{ .BaseURL}}img/portfolio/{{.imgS}}" alt="">   
+                </picture>            	
+            </div>
+            <div class='modal-description col s12 l4'>
+            	<table>
+			        <thead>
+			          <tr>
+                      {{ with $.Site.Params.portfolio.modal}}
+			              <th>
+			              	{{ .category }}
+			              </th>
+			              <th>
+			              	{{ .client }}
+			              </th>
+			              <th>
+			              	{{ .date }}
+			              </th>
+                      {{ end }}
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td>{{ .category }}</td>
+			            <td><a href='{{ .clientLink }}'>{{ .client }}</td>
+			            <td>{{ .date }}</td>
+			          </tr>
+			        </tbody>
+			    </table>
+                <p>{{ .description | markdownify }}</p>
+            </div>
+        </div>
+    </div>
+    <div class='modal-footer'>
+      <a href='#!' class='close-btn modal-action modal-close'>Close</a>
+    </div>
+  </div>
+{{ end }}

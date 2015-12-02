@@ -1,0 +1,52 @@
+{{ partial "header.html"  . }} 
+{{ partial "subheader.html"  . }} 
+{{ partial "content.html"  . }}
+<section class="about">
+	<section class='about-person'>
+	{{ with .Site.Params.about.person }}
+		<h2 class='about-person-heading'>
+			{{ .heading }}
+		</h2>
+		<p class='about-person__description'>
+			{{ .description|safeHTML }}
+		</p>
+	{{ end }}
+		<div class='about-person__portrait'>
+			<div id='about-person__line-img'></div>
+			<div class='about-person__full-img'>
+				<img src='{{ .Site.BaseURL}}img/portrait-2015-image.svg' alt=''/>
+			</div>
+		</div>
+	</section> 
+	<section class='about-skills'>
+		<h2 class='about-skills-heading about-heading'>
+			{{ with .Site.Params.about.skills.heading }}{{.}}{{ end }}
+		</h2>
+		<div class='tab-container'>
+			{{ range .Site.Params.about.skills.tab }}
+		    <div class='tab-container__content z-depth-1'>
+			    <h3 class='tab-container__heading'>
+			    	{{ .title }}
+			    </h3>
+		    	<p class='tab-container__paragraph'>
+		    	{{ .description |safeHTML}}
+		    	</p>
+		    	<div class='tab-container__icons'>
+		    		{{ .icon |safeHTML}}
+		    	</div>
+		    	<div class='tab-container__image {{ .imgClass}}'>
+		    		<object class="{{.imgId}}" data='../img/{{ .img }}' type='image/svg+xml'></object>
+		    	</div>
+		    </div>
+		    {{ end }}
+	</section>
+	<section class="about-workflow">
+		<h2 class="about-heading">
+			{{ with .Site.Params.about.workflow.heading }}{{.}}{{ end }}
+		</h2>
+		<div class="about-workflow__img-container">
+			<object class="about-workflow__infographic" data="" type="image/svg+xml"></object>
+		</div>
+	</section>
+</section>
+{{ partial "footer.html" . }}

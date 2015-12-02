@@ -1,0 +1,46 @@
+<main id='panel' class='content-wrapper row'>
+    <a class='toggle-button hide-on-large-only' data-activates='nav-mobile'>
+      	<svg class='icon icon-menu'>
+      		<use xlink:href='#icon-menu'></use>
+      	</svg>
+    </a>
+    <header class="site-title">
+		<svg viewBox="0 0 600 210">
+
+		  <!-- Symbol with text -->
+		  <symbol id="s-text">
+		    <text text-anchor="middle"
+		          x="50%"
+		          y="120px"
+		          dy=".35em"
+		          class="text"
+		          >
+		      irrvrsl
+		    </text>    
+		  </symbol>
+
+		  <!--Mask-->
+		  <mask id="m-text"
+		        maskunits="userSpaceOnUse"
+		        maskcontentunits="userSpaceOnUse">
+		    <use xlink:href="#s-text"
+		         class="text-mask"
+		         ></use>
+		  </mask>
+
+		  <!-- Group with mask -->
+		  <g mask="url(#m-text)">
+		    <!-- Masked content -->
+		    <image xlink:href="{{.Site.BaseURL}}img/description-bg.svg"
+		           width="800"
+		           height="270"
+		           x="0"
+		           y="0"  
+
+		           ></image>
+		  </g>
+		</svg>
+    	<p>{{ .Site.Title}}</p>
+    </header>
+
+	

@@ -1,0 +1,24 @@
+<div class='section-heading'>
+{{ with .Site.Params.works}}
+	<h1>{{ .title }}</h1>
+	<p>{{ .subtitle }}</p>
+{{end}}
+</div>
+<section class='recent-work container'>
+	<div class='row'>
+      {{ range .Site.Data.projects }}
+
+		<div class='work-item col s12 m6'>
+			<figure class='item-thumb z-depth-1'>
+	            <img src='img/portfolio/{{ .preview }}' class='img-responsive' alt=''>
+	            <figcaption>
+	            	<h2>{{ .title }}</h2>
+	            	<p>{{ .subtitle }}</p>
+					<a href='#portfolioModal{{ .modalID }}' class="portfolio-link modal-trigger"></a>
+	            </figcaption>
+			</figure>
+		</div>
+		{{ end }}
+	</div>
+	{{ partial "modals.html" . }}
+</section>

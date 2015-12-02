@@ -1,0 +1,17 @@
+{
+  "name": "rr-theme-hugo",
+  "version": "1.0.0",
+  "description": "Responsive theme for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "irrvrsl",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

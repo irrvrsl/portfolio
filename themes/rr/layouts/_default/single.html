@@ -1,0 +1,51 @@
+{{ partial "header.html"  . }} 
+{{ partial "subheader.html"  . }} 
+{{ partial "content.html"  . }}
+{{ $baseurl := .Site.BaseURL }}
+	<section class='article-wrapper'>
+		<article class='article'>
+		    <header class='article__header'>
+		      <h1 class='article__title'>{{ .Title }}</h1>
+		      <time class='article__meta-date'>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+		      <ul class='post__tags'>
+		      	{{ range .Params.tags}}
+		      	<li class='post__tag'>
+		      		<a href='{{ $baseurl }}tags/{{ . |urlize}}' class='post__tag-link'>	
+		      			{{.}}
+		      		</a>
+		      	</li>
+		      	{{end}}
+		      </ul>
+		    </header>
+		    <div class='article__content'>
+		    	{{ .Content }}
+		    </div>
+		    <footer class='article__footer'>
+			    <nav class='related-posts'>
+			    	<ul class="related-posts__list">
+			    		{{ if .NextInSection }}
+			    		<li class="related-posts__list-item">
+				    		<h2 class='related-posts__post-title'>
+				    			next post:
+				    		</h2>
+				    		<a class='related-posts__post-link' href='{{.NextInSection.Permalink}}'>
+				    			{{ .NextInSection.Title}}
+				    		</a>
+				    	</li>
+				    	{{ end }}
+		    		    {{ if .PrevInSection }}
+				    	<li class="related-posts__list-item">
+				    		<h2 class='related-posts__post-title'>
+				    			previous post:
+				    		</h2>
+				    		<a class='related-posts__post-link' href='{{.PrevInSection.Permalink}}'>
+				    			{{ .PrevInSection.Title}}
+				    		</a>
+				    	</li>
+		    			{{ end }}
+		    		</ul>
+	    		</nav>
+		    </footer>
+		</article>
+	</section>
+{{ partial "footer.html" . }}

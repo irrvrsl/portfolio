@@ -1,0 +1,33 @@
+{{ partial "header.html"  . }} 
+{{ partial "subheader.html"  . }} 
+{{ partial "content.html"  . }}
+	<section class='section-heading'>
+		{{ with .Site.Params.blog}}
+		<h1>{{ .title }}</h1>
+		<p>{{ .description }}</p>
+		{{end}}
+	</section>
+	<section class='post-wrapper col s12 m8 offset-m1'>	
+		{{ range .Paginator.Pages }}
+			{{ .Render "summary"}}
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</section>
+	<aside class='post-sidebar col s12 m3'>
+		<h2 class="post-sidebar__title">
+			Browse posts by tag
+		</h2>
+		<ul class='post-sidebar__taglist'>
+		  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+		    <li class='post-sidebar__tag'>
+			    <a class='post-sidebar__tag-link' href='/tags/{{ $name | urlize }}'>
+			    	{{ $name }}
+			    	 <small class='post-sidebar__tag-count'>
+			    	 	{{ .Count}}
+			    	 </small>
+			    </a>
+		    </li>
+		  {{ end }}
+		</ul>
+	</aside>
+{{ partial "footer.html" . }}

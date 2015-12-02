@@ -1,0 +1,68 @@
+<script src='{{ .Site.BaseURL }}js/vendor.js' ></script>
+
+{{ if eq .URL "/about/"}}
+<script src='{{ .Site.BaseURL }}js/app.js'></script>
+
+<script >
+	//About section portrait init
+	hideLine = function() {
+		var hiddenEl = $('#about-person__line-img'),
+			showEl = $('.about-person__full-img');
+		hiddenEl.css('opacity', '0');
+		showEl.css('opacity', '0.9');
+	}
+	new Vivus('about-person__line-img', {
+		duration: 120, 
+		file: '../img/portrait-2015.svg'
+	}, hideLine);
+	//Change infographic on different resolution
+	var graphic = $('.about-workflow__infographic')
+	function changeSource(){ 
+	    var url = graphic.attr('data'),
+	    	skrollOptionMobile = [{selector: '.about-workflow__img-container', offset: 200, callback: 'workflowMobile()'}],
+	    	skrollOptionDesktop = [{selector: '.about-workflow__img-container', offset: 0, callback: 'workflowDesktop()'}];
+	 
+	    if (Modernizr.mq('(max-width: 992px)')) {
+	        if(url == "../img/infographic-mobile.svg") return;
+	        else {
+	            graphic.attr('data', '../img/infographic-mobile.svg');
+	            Materialize.scrollFire(skrollOptionMobile);
+	        }
+	    }
+	    else {
+	        if(url == "../img/infographic-desktop.svg") return;
+	        else {
+	            graphic.attr('data', '../img/infographic-desktop.svg');
+	            Materialize.scrollFire(skrollOptionDesktop);
+	        }
+	    }
+	}
+	//Change infographic on resize
+	$(window).on('resize', changeSource);
+	changeSource();
+	
+	//SVG Tabs animating on scroll
+	$(window).load(function() {
+		var options = [
+		    {selector: '.tab-container__image_design', offset: 200, callback: 'designAnim()' },
+		    {selector: '.tab-container__image_code', offset: 200, callback: 'codeAnim()' }];
+		Materialize.scrollFire(options);
+
+		});
+</script>
+{{ end }}
+
+
+<script>
+	$(document).ready(function(){
+		//Modal init
+		$('.modal-trigger').leanModal();
+		$('.toggle-button').sideNav({
+			menuWidth: 300,
+			edge: 'left', 
+			closeOnClick: true 
+			}
+		);
+	});
+</script>
+	

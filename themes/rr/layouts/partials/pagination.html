@@ -1,0 +1,26 @@
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<div class="pagination">
+  <nav role="pagination" class="pagination__list">
+      {{ if .Paginator.HasPrev }}
+      <a href="{{.Paginator.Prev.URL}}" class="pagination__link">
+        Newer posts
+      </a>
+      {{ end }}
+      {{ if not .Paginator.HasPrev }}
+        <span class="pagination__link pagination__link_disabled">
+        Newer posts
+      </span>
+      {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{.Paginator.Next.URL}}" class="pagination__link">
+        Older posts
+      </a>
+    {{ end }}
+    {{ if not .Paginator.HasNext }}
+      <span class="pagination__link pagination__link_disabled">
+        Older posts
+      </span>
+  {{ end }}
+  </nav>
+</div>
+{{ end }}

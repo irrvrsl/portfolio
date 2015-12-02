@@ -1,0 +1,17 @@
+{{ partial "header.html"  . }} 
+{{ partial "subheader.html"  . }} 
+{{ partial "content.html"  . }}
+	<section class='section-heading'>
+		{{ with .Site.Params.tags}}
+		<h1>{{ .title }}</h1>
+		<p>{{ .description }}</p>
+		{{end}}
+	</section>
+	<section class='tag-wrapper'>
+	   <h1 class='tag-wrapper__title'>{{ .Title }}</h1>
+	    {{ range .Data.Pages }}
+	        {{ .Render "summary"}}
+	    {{ end }}
+	</section>
+
+{{ partial "footer.html" . }}

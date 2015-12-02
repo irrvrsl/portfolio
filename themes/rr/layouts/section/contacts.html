@@ -1,0 +1,19 @@
+{{ partial "header.html"  . }} 
+{{ partial "subheader.html"  . }} 
+{{ partial "content.html"  . }}
+	<section class='section-heading'>
+		{{ with .Site.Params.contacts}}
+		<h1>{{ .title }}</h1>
+		<p>{{ .description }}</p>
+		{{end}}
+	</section>
+	<section class='contacts'>
+		<ul class='contacts__list'>
+		{{ range .Site.Params.contacts.social}}
+			<li class='contacts__list-item'>
+				<a href='{{ .link }}' class='contacts__list-link' data-icon='{{.name}}' target="_blank">{{ .icon |safeHTML }}</a>
+			</li>
+		{{end}}
+		</ul>
+	</section>
+{{ partial "footer.html" . }}

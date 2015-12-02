@@ -1,0 +1,99 @@
+theme = "rr"
+baseurl = "https://irrvrsl.github.io"
+languageCode = "en-us"
+title = "frontend dev and design"
+MetaDataFormat = "toml"
+SectionPagesMenu = "main"
+pluralizeListTitles = false
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+	name = "Sergei Kurishov"
+	description = "Frontend developer and designer"
+
+	[params.works]
+		title = "featured projects"
+		subtitle = "Here you can see the last of my works"
+
+	[params.portfolio.modal]
+	    client = "Client"
+	    date = "Date"
+	    category = "Category"
+
+	[params.about]
+		title = "About"
+
+		[params.about.person]
+			heading = "hello!"
+			description = "My name is <span class='word_accent'>Sergei Kurishov</span> a.k.a <span class='word_accent'>irrvrsl</span>. I'm a designer and frontend developer based in Bishkek, KG"
+
+		[params.about.skills]
+			heading = "What I do?"
+
+			[[params.about.skills.tab]]
+				title = "design"
+				description = "I'm creating a different stuff in design. Such as web-interfaces, apps, logos, icons. In my works i prefer to use principles of minimal design - light and understandable elements for the end user."
+				icon = "<svg class='tab-icon'><use xlink:href='#icon-ps'></use></svg><svg class='tab-icon'><use xlink:href='#icon-ai'></use></svg>"
+				img = "design-tab.svg"
+				imgId = "design-animation"
+				imgClass = "tab-container__image_design"
+			[[params.about.skills.tab]]
+				title = "development"
+				description = "Also i'm doing some coding things.  I'm building valid HTML5, CSS3, JavaScript. Responsive layouts, animation, SVG animations. I'm trying to optimise all code, that i wrote, so it has to be fast and cross browser compatible." 
+				icon = "<svg class='tab-icon'><use xlink:href='#icon-html'></use></svg><svg class='tab-icon'><use xlink:href='#icon-css'></use></svg><svg class='tab-icon'><use xlink:href='#icon-rwd'></use></svg>"		
+				img = "code-tab.svg"
+				imgId = "code-animation"
+				imgClass = "tab-container__image_code"
+		[params.about.workflow]
+			heading = "workflow"
+	[params.blog]
+		title = "blog"
+		description = "Thoughts about development things and other"
+	[params.tags]
+		title = "tags"
+		description = "browse articles by tags"
+	[params.contacts]
+		title = "contact me"
+		description = "you can contact with me through those social networks"
+		[[params.contacts.social]]
+			link = "https:/facebook.com/irrvrsl"
+			name = "facebook"
+			icon = "<svg class='social-icon icon-fb'><use xlink:href='#icon-fb'></use></svg>"
+		[[params.contacts.social]]
+			link = "https:/vk.com/irrvrsl"
+			name = "vkontakte"
+			icon = "<svg class='social-icon icon-vk'><use xlink:href='#icon-vk'></use></svg>"
+		[[params.contacts.social]]
+			link = "mailto:irrvrsl@gmail.com"
+			name = "gmail"
+			icon = "<svg class='social-icon icon-gmail'><use xlink:href='#icon-gmail'></use></svg>"
+        		
+[[menu.main]]
+	name = "recent works"
+	identifier = "works"							
+	pre = "<svg class='icon icon-works'><use xlink:href='#icon-works'></use></svg>"		
+	url = "/"
+	weight = -80
+
+[[menu.main]]
+	name = "about"
+	identifier = "about"
+	pre = "<svg class='icon icon-about'><use xlink:href='#icon-about'></use></svg>"
+	url = "/about/"
+	weight = -60
+
+[[menu.main]]
+	name = "blog"
+	identifier = "blog"
+	pre = "<svg class='icon icon-blog'><use xlink:href='#icon-blog'></use></svg>"
+	url = "/blog/"
+	weight = -40
+
+[[menu.main]]
+	name = "contacts"
+	identifier = "contacts"
+	pre = "<svg class='icon icon-contact'><use xlink:href='#icon-contact'></use></svg>"
+	url = "/contacts/"
+	weight = -20

@@ -1,0 +1,73 @@
+//IE10+ hack for preventing incorrect SVG transforms in logo
+@media all and (-ms-high-contrast: none) {
+   .main-menu__logo-img:hover {
+		.rr {
+			opacity: .6;
+			fill: transparent;
+			stroke: $dark-grey;
+		}
+		.logo-bg {
+			display: none;
+		}
+		.top-triangles {
+			opacity: .6;
+		}
+	}
+ }
+// Recent works
+@media screen and (min-width: 992px) {
+	.content-wrapper {
+		padding-left: 300px;
+	}
+	.site-title {
+		display: none;
+	}		
+	.item-thumb {
+			&:hover {
+				img{
+					opacity: .5;
+					transform: scale(1.12);
+				}
+				p,
+				h2 {
+					opacity: 1;
+					transform: translate3d(0,0,0);
+				}
+			}
+		img {
+			transition: opacity .3s, transform .3s;
+			backface-visibility: hidden;
+		}
+		h2 {
+			opacity: 0;
+			right: 0;
+			transition: opacity .3s, transform .3s;
+			transform: translate3d(250px,0,0);
+		}
+		p {
+			display: block;
+			opacity: 0;
+			transition: opacity .3s, transform .3s;
+			transform: translate3d(-80px,0,0);
+
+		}
+	}
+	.about-workflow__img-container {
+		max-width: 80%;
+	}
+	.post-sidebar__taglist {
+		padding: 0 2rem 0 0;
+		text-align: right;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.recent-work .modal {
+		width: 90%;
+		max-height: 85%;
+		top: 10% !important;
+		.close-btn:hover {
+			background: lighten($accent-color, 10%);
+		}
+	}
+	
+}

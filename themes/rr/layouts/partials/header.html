@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+{{partial "meta.html" . }}
+{{ .Hugo.Generator }}
+{{ .Scratch.Add "title" "" }}{{ if isset .Site.Data.titles .Title }}{{ .Scratch.Set "title" (index .Site.Data.titles .Title).title }}{{ else }}{{ .Scratch.Set "title" .Title}}{{end}}
+<title>irrvrsl | {{ .Scratch.Get "title" }}</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel='stylesheet' href='{{ .Site.BaseURL }}css/style.css'>
+<link rel='stylesheet' href='{{ .Site.BaseURL }}css/materialize.css'>
+</head>
+<body>
