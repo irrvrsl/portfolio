@@ -12,7 +12,7 @@
       <ul class="post__tags">
       	{{ range .Params.tags}}
       	<li class='post__tag'>
-      		<a href='{{ $baseurl }}tags/{{ . |urlize}}' class='post__tag-link'>
+      		<a href='{{ $baseurl }}/tags/{{ . |urlize}}' class='post__tag-link'>
       			{{.}}
       		</a>
       	</li>
