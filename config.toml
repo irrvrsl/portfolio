@@ -58,11 +58,11 @@ pluralizeListTitles = false
 		title = "contact me"
 		description = "you can contact with me through those social networks"
 		[[params.contacts.social]]
-			link = "https:/facebook.com/irrvrsl"
+			link = "//facebook.com/irrvrsl"
 			name = "facebook"
 			icon = "<svg class='social-icon icon-fb'><use xlink:href='#icon-fb'></use></svg>"
 		[[params.contacts.social]]
-			link = "https:/vk.com/irrvrsl"
+			link = "//vk.com/irrvrsl"
 			name = "vkontakte"
 			icon = "<svg class='social-icon icon-vk'><use xlink:href='#icon-vk'></use></svg>"
 		[[params.contacts.social]]
