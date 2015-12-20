@@ -123,24 +123,21 @@ pre[class*="language-"] {
 
 div.prism-show-language {
 	position: relative;
+	margin: 0 0 -1rem;
 }
 
 div.prism-show-language > div.prism-show-language-label[data-language] {
 	color: black;
-	background-color: #ffe082;
+	background-color: #ddd;
 	display: inline-block;
-	position: absolute;
-	bottom: auto;
-	left: auto;
-	top: 0;
-	right: 0;
-	width: auto;
+	width: 100%;
 	height: auto;
 	font-size: 0.9em;
 	font-weight: bold;
-	border-radius: 0 0 0 5px;
+	border-radius: 5px 5px 0 0;
 	padding: 0 0.5em;
 	text-shadow: none;
+	text-transform: uppercase;
 	z-index: 1;
 	box-shadow: none;
 	transform: none;

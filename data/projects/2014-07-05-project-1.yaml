@@ -1,11 +1,10 @@
 modalID: 1
-title: Round Icons
-subtitle: Lorem ipsum dolor sit amet consectetur.
-date: 2014-07-05
-img: roundicons.png
-imgS: roundicons-preview.png
-preview: roundicons-preview.png
-client: Start Bootstrap
-clientLink: "#"
-category: Graphic Design
-description: Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo! <br><br>**Want these icons in this portfolio item sample?** You can download 60 of them for free, courtesy of [RoundIcons.com](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc), or you can purchase the 1500 icon set [here](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc).
+title: Sarafan Boutique
+subtitle: Website for a woman clothes.
+date: 2015-05-05
+img: sarafan
+preview: sarafan_small.png
+client: Sarafan company
+clientLink: "//development.sarafan.divshot.io"
+category: Graphic Design, Development
+description: This project was not so hard as i supposed, because it's just a static promo-website. In this project i used a new technologies in frontend-development such as Flexbox layout, SVG graphic and CSS3. And it was not done, because my employeer sold out his boutique. But u can check it out on development stage at divshot, link in the table above. 

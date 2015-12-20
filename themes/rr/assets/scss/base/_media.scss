@@ -59,6 +59,9 @@
 		padding: 0 2rem 0 0;
 		text-align: right;
 	}
+	.post-sidebar__tag {
+		display: block;
+	}
 }
 @media screen and (min-width: 1280px) {
 	.recent-work .modal {
@@ -68,5 +71,11 @@
 		.close-btn:hover {
 			background: lighten($accent-color, 10%);
 		}
+	}
+}
+@media screen and (min-width: 1600px) {
+	.article,
+	.post {
+		font-size: 1.125em;
 	}
 }

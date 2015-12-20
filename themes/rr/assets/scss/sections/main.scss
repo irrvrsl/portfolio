@@ -145,21 +145,24 @@ object {
 		right: 1rem;
 		transition: .5s ease;
 	}
-}
-.site-footer {
-	width: 100%;
-	position: relative;
-	p {
-		font-size: 14px;
-		width: 225px;
-		position: absolute;
-		right: 0;
-		top: 2rem;
+	.site-footer {
+		width: 100%;
+		p {
+			font-size: 14px;
+			padding: 10px 36px;
+		}
+		a {
+			display: inline;
+	    	line-height: 1;
+	    	padding: 0;
+	    	text-decoration: underline;
+		}
+		svg {
+			margin-bottom: -20px;
+		}
 	}
-	svg {
-		margin-bottom: -20px;
-	}
 }
+
 .toggle-button {
 	position: fixed;
 	outline: none;
@@ -233,6 +236,7 @@ object {
 	margin: .5rem 0;
 }
 .item-thumb {
+	max-height: 500px;
 	margin: 0;
 	overflow: hidden;
 	position: relative;
@@ -244,8 +248,7 @@ object {
 		position: inherit;
 		display: block;
 		min-height: 100%;
-		max-width: none;
-		width: calc(100% + 60px);
+		width: 101%;
 		opacity: 1;
 	}
 	figcaption,
