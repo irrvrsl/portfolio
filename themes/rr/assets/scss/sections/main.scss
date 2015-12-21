@@ -35,12 +35,6 @@ object {
 //////////////////////////////////////////////////////////////////////////
 .main-menu.side-nav {
 	background: $light-grey;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	&::-webkit-scrollbar {
-		display: none;
-	}
 }
 .main-menu__header {
 	flex-shrink: 0;
@@ -98,6 +92,9 @@ object {
 		margin: 0 0 1rem;
 		padding: 0;
 		line-height: 0;
+	}
+	.main-menu__nav {
+		margin: 5rem 0;
 	}
 	.main-menu__link {
 		position: relative;

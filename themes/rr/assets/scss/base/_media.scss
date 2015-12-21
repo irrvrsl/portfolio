@@ -16,6 +16,18 @@
  }
 // Recent works
 @media screen and (min-width: 992px) {
+	.main-menu.side-nav {
+		background: $light-grey;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.main-menu__header {
+		flex-shrink: 0;
+	}
 	.content-wrapper {
 		padding-left: 300px;
 	}
