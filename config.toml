@@ -11,7 +11,7 @@ pluralizeListTitles = false
 
 [params]
 	name = "Sergei Kurishov"
-	description = "Frontend developer and designer"
+	description = "I am a frontend developer and designer, living in Kyrgyzstan, Bishkek"
 
 	[params.works]
 		title = "featured projects"
@@ -27,7 +27,7 @@ pluralizeListTitles = false
 
 		[params.about.person]
 			heading = "hello!"
-			description = "My name is <span class='word_accent'>Sergei Kurishov</span> a.k.a <span class='word_accent'>irrvrsl</span>. I'm a designer and frontend developer based in Bishkek, KG"
+			description = "My name is <span class='word_accent'>Sergei Kurishov</span> a.k.a <span class='word_accent'>irrvrsl</span>. I'm a designer and frontend developer based in Bishkek, Kyrgyzstan"
 
 		[params.about.skills]
 			heading = "What I do?"

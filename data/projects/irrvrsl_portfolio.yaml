@@ -1,0 +1,11 @@
+modalID: 2
+title: irrvrsl portfolio
+subtitle: My personal portfolio site
+date: 2015-12-12
+folder: irrvrsl
+img: irrvrsl
+preview: irrvrsl_small.svg
+client: Self project
+clientLink: "//irrvrsl.github.io"
+category: Graphic Design, Development
+description: This is my personal portfolio site. I used all new technologies in frontend development, that i know. Site is done in material design, but with some difference. I used here a materializecss framework for the frontend, Hugo static site generator as the platform. Bunch of SVG animations(with GSAP), css3 transitions and all that modern stuff.

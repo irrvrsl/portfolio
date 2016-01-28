@@ -57,7 +57,7 @@
 			transform: translate3d(250px,0,0);
 		}
 		p {
-			display: block;
+			display: inline-block;
 			opacity: 0;
 			transition: opacity .3s, transform .3s;
 			transform: translate3d(-80px,0,0);
@@ -84,10 +84,18 @@
 			background: lighten($accent-color, 10%);
 		}
 	}
+		.side-nav.fixed .main-menu__nav {
+		margin: 1rem 0;
+	}
 }
 @media screen and (min-width: 1600px) {
 	.article,
 	.post {
 		font-size: 1.125em;
+	}
+	.item-thumb {
+		p {
+		 font-size: 1.125em;
+		}
 	}
 }

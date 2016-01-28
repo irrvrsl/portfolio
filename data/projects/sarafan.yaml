@@ -1,0 +1,11 @@
+modalID: 1
+title: Sarafan Boutique
+subtitle: Website for a woman clothes.
+date: 2015-05-05
+folder: sarafan
+img: sarafan
+preview: sarafan_small.svg
+client: Sarafan company
+clientLink: "//sarafan.firebaseapp.com/"
+category: Graphic Design, Development
+description: This project was not so hard as i supposed, because it's just a static promo-website. In this project i used a new technologies in frontend-development such as Flexbox layout, SVG graphic and CSS3. And it was not done, because my employeer sold out his boutique. But u can check it out on development stage at divshot, link in the table above. 

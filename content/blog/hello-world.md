@@ -1,5 +1,5 @@
 ---
-Description: ""
+Description: Finishing of my personal portfolio site
 Keywords:
 - Development
 - Design
@@ -12,9 +12,6 @@ Tags:
 Title: Hello world, i suppose?
 Url: blog/hello-world-i-suppose
 date: 2015-12-15
-disqus_identifier: 124 http://localhost/~sfrancia/wordpress/?p=124
-disqus_title: 7 security practices you need to follow
-disqus_url: http://spf13.com/post/7-security-practices-you-need-to-follow/
 ---
 
 

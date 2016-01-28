@@ -5,7 +5,7 @@
     	<p class='modal-intro'>{{ .subtitle | markdownify }}</p>
         <div class='row'>
         	<div class='modal-body col s12 l8'>
-                <img srcset="{{ .BaseURL}}/img/portfolio/{{.img}}_large.png" alt=""> 
+                <img srcset="{{ .BaseURL}}/img/portfolio/{{.folder}}/{{.img}}_large.png" alt=""> 
             </div>
             <div class='modal-description col s12 l4'>
             	<table>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class='modal-footer'>
-      <a href='#!' class='close-btn modal-action modal-close'>Close</a>
+      <a href='#!' class='close-btn modal-action modal-close waves-effect waves-green'>Close</a>
     </div>
   </div>
 {{ end }}
