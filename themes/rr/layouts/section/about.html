@@ -4,9 +4,9 @@
 <section class="about">
 	<section class='about-person'>
 	{{ with .Site.Params.about.person }}
-		<h2 class='about-person-heading'>
+		<h1 class='about-person-heading'>
 			{{ .heading }}
-		</h2>
+		</h1>
 		<p class='about-person__description'>
 			{{ .description|safeHTML }}
 			{{.Content}}
@@ -20,15 +20,15 @@
 		</div>
 	</section> 
 	<section class='about-skills'>
-		<h2 class='about-skills-heading about-heading'>
+		<h1 class='about-skills-heading about-heading'>
 			{{ with .Site.Params.about.skills.heading }}{{.}}{{ end }}
-		</h2>
+		</h1>
 		<div class='tab-container'>
 			{{ range .Site.Params.about.skills.tab }}
 		    <div class='tab-container__content z-depth-1'>
-			    <h3 class='tab-container__heading'>
+			    <h2 class='tab-container__heading'>
 			    	{{ .title }}
-			    </h3>
+			    </h2>
 		    	<p class='tab-container__paragraph'>
 		    	{{ .description |safeHTML}}
 		    	</p>
@@ -42,9 +42,9 @@
 		    {{ end }}
 	</section>
 	<section class="about-workflow">
-		<h2 class="about-heading">
+		<h1 class="about-heading">
 			{{ with .Site.Params.about.workflow.heading }}{{.}}{{ end }}
-		</h2>
+		</h1>
 		<div class="about-workflow__img-container">
 			<object class="about-workflow__infographic" data="" type="image/svg+xml"></object>
 		</div>

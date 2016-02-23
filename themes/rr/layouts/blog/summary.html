@@ -1,14 +1,14 @@
 {{ $baseurl := .Site.BaseURL }}
 <article class='post z-depth-1'>
     <header class='post__header'>
-      <h2 class='post__title'>
+      <h1 class='post__title'>
         <a class='post__title-link' href='{{ .Permalink }}'> 
           {{ .Title }}
         </a>
-      </h2>
-      <p class='post__meta-date'>
+      </h1>
+      <time class='post__meta-date' datetime="2016-01-21" pubdate>
         {{ .Date.Format "Mon, Jan 2, 2006" }}
-      </p>
+      </time>
       <ul class="post__tags">
       	{{ range .Params.tags}}
       	<li class='post__tag'>

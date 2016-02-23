@@ -6,7 +6,7 @@
 		<article class='article'>
 		    <header class='article__header'>
 		      <h1 class='article__title'>{{ .Title }}</h1>
-		      <time class='article__meta-date'>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+		      <time class='article__meta-date' datetime="2016-01-21" pubdate>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
 		      <ul class='post__tags'>
 		      	{{ range .Params.tags}}
 		      	<li class='post__tag'>
